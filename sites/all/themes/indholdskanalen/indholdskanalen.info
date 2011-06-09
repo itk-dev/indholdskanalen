@@ -7,7 +7,7 @@ engine = phptemplate
 
 ;Regions
 regions[header] = Header
-regions[top_region] = Top
+;regions[top_region] = Top
 regions[content_top] = Content, Above
 regions[content_bottom] = Content, Below
 regions[left] = Left

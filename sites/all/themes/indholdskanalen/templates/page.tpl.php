@@ -25,19 +25,8 @@
     </div>
   </div>
 
-  <?php if ($breadcrumb): ?>
-    <div id="breadcrumb" class="container-12">
-      <?php print $breadcrumb; ?>
-    </div>
-   <?php endif; ?>
-
   <div id="page" class="container-12">
     <div class="page-inner">
-      <?php if ($top_region): ?>
-        <div id="top-region" class="region">
-          <?php print $top_region; ?>
-        </div>
-      <?php endif ?>
 
       <?php if ($left ): ?>
         <div id="left" class="<?php print ns('grid-4', $right, 1, 'rc', 3); ?> region">
@@ -66,25 +55,8 @@
         <?php endif; ?>
       </div>
  
-      <?php if ($right): ?>
-        <div id="right" class="<?php print ns('grid-4', $left, 1, 'rc', 3); ?> region">
-          <?php print $right; ?>
-        </div>
-      <?php endif ?>
     </div>
   </div>
-
-  <?php if ($bottom_region): ?>
-  <div class="secondary-content">
-    <div class="container-12">
-      <?php if ($bottom_region): ?>
-        <div id="bottom-region" class="region">
-          <?php print $bottom_region; ?>
-        </div>
-      <?php endif ?> 
-    </div> 
-  </div>
-  <?php endif ?>
 
   <div id="footer">
     <div class="container-12 clear-block">
