@@ -29,6 +29,10 @@ function indholdskanalen_preprocess_page(&$vars, $hook) {
     // Return the site_name even when site_name is disabled in theme settings.
     $vars['logo_alt_text'] = (empty($vars['logo_alt_text']) ? variable_get('site_name', '') : $vars['logo_alt_text']);
     $vars['site_logo'] = '<a id="site-logo" href="'. $vars['front_page'] .'" title="'. $vars['logo_alt_text'] .'" rel="home"><img src="'. $vars['logo'] .'" alt="'. $vars['logo_alt_text'] .'" /></a>';
+    
+    if ( drupal_is_front_page() ) {
+       $vars['site_logo'] .= '';// dummy - blot en test
+    }
   }
 
   // if (theme_get_setting('indholdskanalen_aakb_topbar')) {
