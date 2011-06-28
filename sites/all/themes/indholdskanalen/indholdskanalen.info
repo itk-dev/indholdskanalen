@@ -29,21 +29,21 @@ features[] = favicon
 
 ;Stylesheets
 stylesheets[all][]    = styles/calendar.less
-stylesheets[all][]    = styles/rep-reset-min.less
-stylesheets[screen][] = styles/rep-grid.less
-stylesheets[all][]    = styles/rep-typography.less
-stylesheets[screen][] = styles/rep-tabs.less
-stylesheets[screen][] = styles/rep-styles.less
-stylesheets[screen][] = styles/rep-blocks.less
+stylesheets[all][]    = styles/indholdskanalen-reset-min.less
+stylesheets[screen][] = styles/indholdskanalen-grid.less
+stylesheets[all][]    = styles/indholdskanalen-typography.less
+stylesheets[screen][] = styles/indholdskanalen-tabs.less
+stylesheets[screen][] = styles/indholdskanalen-styles.less
+stylesheets[screen][] = styles/indholdskanalen-blocks.less
 stylesheets[print][]  = styles/print.less
 
 ;IE specific stylesheets
-ie stylesheets[if IE 6][all][] = styles/rep-ie6.less
-ie stylesheets[if IE 7][all][] = styles/rep-ie7.less
-ie stylesheets[if IE 8][all][] = styles/rep-ie8.less
+ie stylesheets[if IE 6][all][] = styles/indholdskanalen-ie6.less
+ie stylesheets[if IE 7][all][] = styles/indholdskanalen-ie7.less
+ie stylesheets[if IE 8][all][] = styles/indholdskanalen-ie8.less
 
 ;Scripts
-scripts[] = scripts/rep-common.js
+;scripts[] = scripts/indholdskanalen-common.js
 
 ;Panels layouts 
 plugins[panels][layouts] = templates/layouts
