@@ -1,8 +1,8 @@
 /* ----- / Colors ----- */
-@linkcolor: #00959a;
-@linkcolor-visited: #8931bb;
-@linkcolor-hover: #006467;
-@linkcolor-active: #47a9ac;
+@linkcolor: #6ea900;
+@linkcolor-visited: #4b7300;
+@linkcolor-hover: #64812f;
+@linkcolor-active: #4b7300;
 
 /* ----- / Basic typography ----- */
 @fontsize-default: 13px;
@@ -55,12 +55,14 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: @fontsize-default * 2;
-  line-height: @lineheight-default * 1.7;
+  background-color: #fff;
+  color: #000;
+  font-size: @fontsize-default * 1.75;
   font-weight: bold;
+  line-height: @lineheight-default * 1.7;
   line-height: 30px;
-  margin: 0 0 15px;
-  color: #fff;
+  margin: 15px 0 15px;
+  padding: 5px 10px;
 }
 
 h2 {
@@ -102,6 +104,7 @@ li>h2:first-child {
 a,
 a:link {
   color: @linkcolor;
+  text-decoration: none;
 }
 
 a:visited {
@@ -118,7 +121,6 @@ a:active {
 .node .content a {
   border-bottom: 1px dotted @linkcolor;
   margin-bottom: -1px;
-  text-decoration: none;
   
   &:link {
     border-bottom: 1px dotted @linkcolor;
@@ -236,18 +238,16 @@ table {
 /* ----- / Menus ----- */
 .menu-block ul li a.active,
 .menu-block ul li a.active-trail {
-  background-color: #cbcbcb;
-  color: #333;
+  background-color: #333;
+  color: #fff;
 }
 
 .menu-block ul li a:hover,
 .menu-block ul li a:focus {
-  background-color: #767676;
   color: #fff;
 }
 
 .menu-block ul li a:active {
-  background-color: #767676;
   color: #fff;
 }
 
@@ -326,4 +326,12 @@ input[type=password] {
   font-size: @fontsize-default;
 }
 
+/* ----- / News ----- */
 
+.view-news li {
+  color: #000;
+}
+
+.view-news li h2 a {
+  color: #000;
+}

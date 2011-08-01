@@ -5,8 +5,8 @@
 
 // Colored block headings like nodespotbox, mailchimp etc.
 .block-heading(@param) {
-  background-color: #d2d2d2;
-  padding: 10px 8px;
+  background-color: #fff;
+  padding: 5px 10px;
   margin-bottom: 0;
 }
 
@@ -158,15 +158,19 @@ input[type=radio] {
 }
 
 .header-inner {
-  background-color: #000;
-  min-height: 130px;
+  background: #000 url('../images/header-image.jpg') no-repeat center 165px;
+  min-height: 344px;
   position: relative;
 }
 
 .logo {
   left: 35px;
   position: absolute;
-  top: -20px;
+  top: 10px;
+}
+
+.logo a {
+  float: left;
 }
 
 /* !----- / Search ----- */
@@ -252,15 +256,18 @@ input[type=radio] {
 }
 
 .menu-block ul li a {
-  background-color: #666;
   color: #fff;
   display: block;
   padding: 0 15px;
   text-decoration: none;
 }
 
+.menu-block ul li a:hover {
+  background-color: #333;
+}
+
 #main-menu {
-  background-color: #666;
+  background-color: #3a3a3a;
   bottom: 0;
   left: 0;
   position: absolute;
@@ -498,6 +505,7 @@ input[type=radio] {
 
 .nodespotbox h3 {
   .block-heading;
+  margin: 15px 0 0;
 }
 
 .nodespotbox h3 a {
@@ -506,6 +514,11 @@ input[type=radio] {
 
 .nodespotbox .image a {
   display: block;
+}
+
+.nodespotbox .content {
+  background-color: #333;
+  padding: 10px;
 }
 
 /*
@@ -904,7 +917,7 @@ body.context-editing div a.context-block-region {
 }
 
 body.context-editing div .region.ui-sortable {
-  background: none repeat scroll 0 0 #d1ec9b;
+  background: #d1ec9b none repeat scroll 0 0;
   .border-radius(5px);
   height: auto;
   margin: 5px 0;
@@ -926,4 +939,12 @@ body.context-editing div.context-block-region-empty a.context-block-region {
 
 body.context-editing div.draggable-placeholder {
   margin: 5px;
+}
+
+/* ----- / News ----- */
+
+.view-news li {
+  background-color: #fff;
+  margin: 0 0 25px;
+  padding: 15px;
 }
