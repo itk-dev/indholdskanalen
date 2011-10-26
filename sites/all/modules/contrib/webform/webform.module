@@ -1077,6 +1077,7 @@ function webform_node_delete($node) {
   db_query('DELETE FROM {webform_roles} WHERE nid = %d', $node->nid);
   db_query('DELETE FROM {webform_submissions} WHERE nid = %d', $node->nid);
   db_query('DELETE FROM {webform_submitted_data} WHERE nid = %d', $node->nid);
+  db_query('DELETE FROM {webform_last_download} WHERE nid = %d', $node->nid);
 }
 
 /**
@@ -1851,6 +1852,11 @@ function _webform_client_form_rule_check($node, $component, $page_num, $form_sta
     if ($component['extra']['conditional_operator'] == '!=') {
       $show_component = !$show_component;
     }
+  }
+
+  // Private component?
+  if ($component['extra']['private']) {
+    $show_component = webform_results_access($node);
   }
 
   return $show_component;
